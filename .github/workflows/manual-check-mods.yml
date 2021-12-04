@@ -50,7 +50,8 @@ jobs:
       # Recursively copy directory contents to data/mods/, overwrite existing files
       run: |
         cd cataclysmbn-unstable
-        cp -r -T ../Kenan-BrightNights-Modpack/ ./data/mods/
+        cp -r -T ../Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/ ./data/mods/
+        cp -r -T ../Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/ ./data/mods/
         ls -l data/mods/
     - name: Loadtest all mods
       run: |
